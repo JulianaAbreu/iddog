@@ -16,7 +16,9 @@ const LayoutWrapper = styled.div`
 
 const Content = styled.main`
   grid-area: content;
-  padding: 8rem 4rem;
+  padding: 15rem 4rem;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Header = styled.header`
@@ -24,39 +26,37 @@ export const Header = styled.header`
   justify-content: center;
   grid-area: header;
   padding: 0 1rem;
-  height: 10rem;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.85);
-  span {
-    border-bottom: 5px solid #f42b52;
-  }
+  height: 20rem;
 `;
 
 const LogoContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  h1 {
-    margin: 0;
-  }
+
   h1,
   a {
-    color: white;
+    font-weight: 100;
+    color: #303030;
   }
-  a {
-    margin-left: 30px;
-  }
+`;
+
+const BrandText = styled.span`
+  font-weight: 600;
 `;
 
 const DefaultLayout = () => (
   <LayoutWrapper>
     <Header>
       <LogoContent>
-        <h1>THE IDDOG</h1>
+        <h1>
+          THE <BrandText>IDDOG</BrandText>
+        </h1>
       </LogoContent>
     </Header>
     <Content>
-      <Route path="/" exact component={DogsPage} />
+      <Route path="" exact component={DogsPage} />
+      <p>teste</p>
     </Content>
   </LayoutWrapper>
 );
