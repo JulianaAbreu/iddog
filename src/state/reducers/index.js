@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
 
-import history from '../../utils/history';
+import auth from '../ducks/auth';
+import feed from '../ducks/feed';
 
-export default function createReducer(injectedReducers = {}) {
-  const rootReducer = combineReducers({
+export function createRootReducer(history) {
+  return combineReducers({
+    auth,
+    feed,
     router: connectRouter(history),
-    ...injectedReducers,
   });
-
-  return rootReducer;
 }
