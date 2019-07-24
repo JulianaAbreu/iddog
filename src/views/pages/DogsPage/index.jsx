@@ -79,7 +79,7 @@ class DogsPage extends Component {
           dogs.list.map((dog, i) => (
             <Col
               key={dog}
-              span={24}
+              span={8}
               style={{
                 marginTop: 25,
                 width: 410,
@@ -88,6 +88,7 @@ class DogsPage extends Component {
               }}
               onClick={() => this.showModal(i, dog)}
             >
+              aa
               <img
                 style={{
                   width: '100%',
