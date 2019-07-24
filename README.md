@@ -11,7 +11,10 @@ In the terminal:
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can Install the dependencies with the command:
+### `npm install`
+
+Run project:
 
 ### `npm start`
 
