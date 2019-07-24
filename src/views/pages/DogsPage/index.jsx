@@ -88,7 +88,6 @@ class DogsPage extends Component {
               }}
               onClick={() => this.showModal(i, dog)}
             >
-              aa
               <img
                 style={{
                   width: '100%',
