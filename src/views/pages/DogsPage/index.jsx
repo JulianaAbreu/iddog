@@ -74,7 +74,11 @@ class DogsPage extends Component {
     const { dogs } = this.props;
 
     return (
-      <Row type="flex" gutter={24} style={{ flexWrap: 'wrap' }}>
+      <Row
+        type="flex"
+        gutter={24}
+        style={{ flexWrap: 'wrap', display: 'flex', justifyContent: 'center' }}
+      >
         {!isEmpty(dogs) &&
           dogs.list.map((dog, i) => (
             <Col
