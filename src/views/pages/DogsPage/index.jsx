@@ -79,7 +79,7 @@ class DogsPage extends Component {
           dogs.list.map((dog, i) => (
             <Col
               key={dog}
-              span={8}
+              span={24}
               style={{
                 marginTop: 25,
                 width: 410,
