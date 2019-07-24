@@ -2,7 +2,7 @@
 Visit: https://theiddog.herokuapp.com/
 
 ## Description
-The technologies used were React, redux, styled-components (CSS-in-JS), Jest + Enzyme to tests unit, ESLint + Prettier as linter and Ducks pattern for redux reducer bundles (https://github.com/erikras/ducks-modular-redux).
+The technologies used were React, redux, styled-components (CSS-in-JS), Jest + Enzyme to tests unit, ESLint + Prettier as linter.
 
 ## Installation
 Clone the repository https://github.com/JulianaAbreu/iddog
