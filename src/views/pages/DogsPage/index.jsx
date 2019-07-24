@@ -120,7 +120,7 @@ class DogsPage extends Component {
           <Col span={24}>
             <MenuBreadcrumb handleClickCategory={this.handleClickCategory} />
           </Col>
-          <Col style={{ width: '100%' }}>
+          <Col span={24}>
             {!isLoading ? (
               this.renderDogsList()
             ) : (
