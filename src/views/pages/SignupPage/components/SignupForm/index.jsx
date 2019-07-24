@@ -11,8 +11,8 @@ const InputText = styled(Input)`
 `;
 
 const SignupForm = ({ form: { getFieldDecorator }, onSubmit, isLoading }) => (
-  <Form style={{ width: '100%' }}>
-    <Row type="flex" justify="center" gutter={12}>
+  <Form>
+    <Row type="flex" justify="center" gutter={12} style={{ width: '85%' }}>
       <Col span={22}>
         <Form.Item>
           {getFieldDecorator('email', {
