@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Content = styled.main`
   grid-area: content;
-  padding: 10rem 7rem;
+  padding: 10rem 0rem;
   display: flex;
   justify-content: center;
   text-align: center;
